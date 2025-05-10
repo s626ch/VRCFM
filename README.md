@@ -6,8 +6,8 @@ Simple OSC for your scrobbles.
 `requests`<br>
 `time`<br>
 `python-osc`<br><br>
-After installing Python, `requests` and `time` should already be satisfied.<br>
-For `python-osc`, you will likely have to run `python3 -m pip install python-osc` in a terminal/command prompt.<br><br>
+After installing Python, `time` should already be satisfied.<br>
+For `python-osc` and `requests`, you will likely have to run `python3 -m pip install python-osc requests` in a terminal/command prompt.<br><br>
 If you have a Python version less than 3.10, you can use `vrcfm-oldpython.py`.<br>
 ### What's the difference?
 The primary script uses switch/case "match" statements to ultimately be a bit faster at runtime, however these were only added in Python 3.10, the latter script uses if/else statements, compatible with older Python versions.
