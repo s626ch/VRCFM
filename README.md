@@ -1,21 +1,25 @@
-# VRCFM
-Simple OSC for your scrobbles.
+# VRCFM-Status
+Simple status setter for your scrobbles.
 
 # Requirements
 `Python >= 3.10`<br>
 `requests`<br>
 `time`<br>
-`python-osc`<br><br>
-After installing Python, `time` should already be satisfied.<br>
-For `python-osc` and `requests`, you will likely have to run `python3 -m pip install python-osc requests` in a terminal/command prompt.<br><br>
-If you have a Python version less than 3.10, you can use `vrcfm-oldpython.py`.<br>
-### What's the difference?
-The primary script uses switch/case "match" statements to ultimately be a bit faster at runtime, however these were only added in Python 3.10, the latter script uses if/else statements, compatible with older Python versions.
+`json`<br>
+`sys`<br>
+Run `python3 -m pip install python-osc requests` in a terminal/command prompt.<br><br>
 
 # API Key
 You can get a Last.FM API key [here](https://www.last.fm/api/account/create).
 
 You will need to set your API key in the script, see the "CONFIG" section!
 
+# Auth Cookie
+You will need to get your VRChat auth cookie.
+You can do so by opening a VRChat page (e.g. your profile), opening your browser's developer tools, and finding the "auth" cookie's "Value". On Firefox, it's under Storage > Cookies > vrchat.com.
+
+# usr ID
+You can get your VRChat usr_... ID by navigating to your profile on the website and copying it from the URL.
+
 # Preview
-![](/preview.png)
+![](/2026-05-19_05-35.png)
