@@ -46,7 +46,6 @@ def setStatus(song: str) -> bool:
 	try:
 		resp = requests.put(VRC_URL, headers=headers, data=body, cookies={"auth":VRC_AUTH},timeout=10)
 		resp.raise_for_status()
-		print(f"status updated! status: {resp.status_code}")
 		return True
 	except Exception as e:
 		print(f"error updating status: {e}", file=sys.stderr)
